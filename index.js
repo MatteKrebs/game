@@ -7,7 +7,7 @@ img.onload = function() {
     ctx.drawImage(img, 0, 0)
     ctx.font = "18px Courier New"
     ctx.fillStyle = 'white'
-    ctx.fillText("Psycho Game", 95, 40)
+    ctx.fillText("Millennials at Work", 50, 40)
 }
 img.src = 'resources/images/main-menu.jpg'
 
