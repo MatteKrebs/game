@@ -4,16 +4,13 @@ Source code, rules, and code of conduct while using **Millenials at Work**.
 
 **Millenials at Work** is a web-based game hosted on GitHub for non-commercial use. Source code can be found at [here](https://github.com/achref95/game).
 
-**Millenials at Work** 
-
 ## Getting Started
 
-To view the game in your browser, click on the following link: 
+To view the game in your browser, [CLICK HERE](https://achref95.github.io/Millennials-at-Work/).
 
 OR
 
 - git clone [https://github.com/achref95/game](https://github.com/achref95/game) in your terminal
-- cd 
 - open index.html
 
 ## Technologies Used
