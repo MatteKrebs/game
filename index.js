@@ -4,18 +4,23 @@ const ctx = canvas.getContext('2d')
 
 const img = new Image()
 img.onload = function() {
-    ctx.drawImage(img, 0, 0)
+    ctx.drawImage(img, 0, 0, canvas.width, canvas.height)
     ctx.font = "18px Courier New"
     ctx.fillStyle = 'white'
     ctx.fillText("Millennials at Work", 50, 40)
 }
-img.src = 'resources/images/main-menu.jpg'
+img.src = 'resources/images/space.png'
 
-// Create START and MUSIC buttons
+// Create START, MUSIC buttons and instructions
 const button = document.createElement('button')
 button.innerText = 'Start Game'
 button.className = 'glow-on-hover'
 canvas.parentNode.appendChild(button)
+
+const instructionsBtn = document.createElement('button')
+instructionsBtn.innerText = 'Instructions'
+instructionsBtn.className = 'glow-on-hoverrr'
+canvas.parentNode.appendChild(instructionsBtn)
 
 const musicButton = document.createElement('button')
 musicButton.className = 'music-btn'
@@ -37,6 +42,7 @@ button.addEventListener('click', function() {
     ctx.clearRect(0, 0, canvas.width, canvas.height)
     button.remove()
     musicButton.remove()
+    instructionsBtn.remove()
     
     //audio.pause()
 
