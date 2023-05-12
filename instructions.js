@@ -9,3 +9,11 @@ h3.style.textAlign = "center";
 h3.innerHTML = "The rules are simple:<br><span style='font-size:24px'>catch as many stressed emojis as you can.</span><br><span style='font-size:20px'>Good luck</span>"
 h3.style.padding = "30px";
 canvas.parentNode.insertBefore(h3, canvas.nextSibling)
+
+const button3 = document.createElement('button')
+button3.innerText = 'Back'
+button3.className = 'glow-on-hoverrr'
+canvas.parentNode.appendChild(button3)
+button3.addEventListener('click', function() {
+  window.location.reload()
+})

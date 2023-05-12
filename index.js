@@ -39,7 +39,7 @@ musicOn.addEventListener('click', function() {
 //Start the game by clearing everything
 button.addEventListener('click', function() {
     // Clear the canvas
-    ctx.clearRect(0, 0, canvas.width, canvas.height)
+    
     button.remove()
     musicButton.remove()
     instructionsBtn.remove()
@@ -54,7 +54,7 @@ button.addEventListener('click', function() {
 
 //Instructions menu
 instructionsBtn.addEventListener('click', function() {
-  ctx.clearRect(0, 0, canvas.width, canvas.height)
+  
   button.remove()
   musicButton.remove()
   instructionsBtn.remove()
