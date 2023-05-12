@@ -51,3 +51,15 @@ button.addEventListener('click', function() {
     script.src = 'game.js'
     document.body.appendChild(script)
 })
+
+//Instructions menu
+instructionsBtn.addEventListener('click', function() {
+  ctx.clearRect(0, 0, canvas.width, canvas.height)
+  button.remove()
+  musicButton.remove()
+  instructionsBtn.remove()
+
+  const script2 = document.createElement('script')
+  script2.src = 'instructions.js'
+  document.body.appendChild(script2)
+})
