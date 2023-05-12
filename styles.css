@@ -10,7 +10,7 @@ body {
 canvas {
     position: relative;
     width: 1200px;
-    height: 600px;
+    height: 700px;
     border: 1px solid black;
     background-color: white;
 }
