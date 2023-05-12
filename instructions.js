@@ -6,7 +6,7 @@ backgroundImg1.src = 'resources/images/space.png'
 
 const h3 = document.createElement('h2')
 h3.style.textAlign = "center";
-h3.innerHTML = "Use left and right arrow to mopve the player<br><span style='font-size:24px'>catch as many stressed emojis as you can and avoid the YOGA ones.</span><br><span style='font-size:20px'>Good luck</span>"
+h3.innerHTML = "Use left and right arrow to mopve the player<br><span style='font-size:24px'>Catch as many stressed emojis as you can and avoid the YOGA ones.</span><br><span style='font-size:30px; color:red;'>Good luck</span>"
 h3.style.padding = "30px";
 canvas.parentNode.insertBefore(h3, canvas.nextSibling)
 
