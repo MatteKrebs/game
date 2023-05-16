@@ -165,8 +165,8 @@ function update() {
 }
 
 function drawScore() {
-  ctx.font = '12px Arial';
-  ctx.fillStyle = 'yellow';
+  ctx.font = '12px Courier New';
+  ctx.fillStyle = 'white';
   ctx.fillText(`Stress LVL: ${score}`, 10, 30);
 }
 

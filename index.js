@@ -4,18 +4,23 @@ const ctx = canvas.getContext('2d')
 
 const img = new Image()
 img.onload = function() {
-    ctx.drawImage(img, 0, 0)
+    ctx.drawImage(img, 0, 0, canvas.width, canvas.height)
     ctx.font = "18px Courier New"
     ctx.fillStyle = 'white'
-    ctx.fillText("Psycho Game", 95, 40)
+    ctx.fillText("Millennials at Work", 50, 40)
 }
-img.src = 'resources/images/main-menu.jpg'
+img.src = 'resources/images/space.png'
 
-// Create START and MUSIC buttons
+// Create START, MUSIC buttons and instructions
 const button = document.createElement('button')
 button.innerText = 'Start Game'
 button.className = 'glow-on-hover'
 canvas.parentNode.appendChild(button)
+
+const instructionsBtn = document.createElement('button')
+instructionsBtn.innerText = 'Instructions'
+instructionsBtn.className = 'glow-on-hoverrr'
+canvas.parentNode.appendChild(instructionsBtn)
 
 const musicButton = document.createElement('button')
 musicButton.className = 'music-btn'
@@ -34,9 +39,10 @@ musicOn.addEventListener('click', function() {
 //Start the game by clearing everything
 button.addEventListener('click', function() {
     // Clear the canvas
-    ctx.clearRect(0, 0, canvas.width, canvas.height)
+    
     button.remove()
     musicButton.remove()
+    instructionsBtn.remove()
     
     //audio.pause()
 
@@ -44,4 +50,16 @@ button.addEventListener('click', function() {
     const script = document.createElement('script')
     script.src = 'game.js'
     document.body.appendChild(script)
+})
+
+//Instructions menu
+instructionsBtn.addEventListener('click', function() {
+  
+  button.remove()
+  musicButton.remove()
+  instructionsBtn.remove()
+
+  const script2 = document.createElement('script')
+  script2.src = 'instructions.js'
+  document.body.appendChild(script2)
 })
